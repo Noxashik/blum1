@@ -1,5 +1,5 @@
 # BlumAuto
-Follow This Installation Guide [https://t.me/verifiedcryptoairdops/167](https://t.me/verifiedcryptoairdops/167)
+Follow This Installation Guide https://t.me/savanop121
 
 # Warning
 
@@ -112,7 +112,7 @@ socks5://user:pass@127.0.0.1:6969
 2. Clone this repository
    
    ```shell
-   git clone https://github.com/orrnobmahmud/blumauto.git
+   git clone https://github.com/Savanop121/blum.git
    ```
 
 3. goto blumauto directory
@@ -200,7 +200,7 @@ You can run the script continuously using a VPS or RDP. Use the screen applicati
 
 # Discussion
 
-If you have any questions or need further assistance, join : [@Crypto Airdrops (Verified Only)](https://t.me/+MCsnE9INs604YWJl)
+If you have any questions or need further assistance, join : https://t.me/savanop121
 
 ## Q&A
 
