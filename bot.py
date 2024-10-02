@@ -448,15 +448,18 @@ async def get_data(data_file, proxy_file):
 async def main():
     init()
     banner = f"""{Fore.GREEN}
-   ___                   _      __  __      _                 _ 
-  / _ \ _ _ _ _ _ _  ___| |__  |  \/  |__ _| |_  _ __ _  _ __| |
- | (_) | '_| '_| ' \/ _ \ '_ \ | |\/| / _` | ' \| '  \ || / _` |
-  \___/|_| |_| |_||_\___/_.__/ |_|  |_\__,_|_||_|_|_|_\_,_\__,_|
-                                                                
-    Auto Claim Bot For Blum - Orrnob's Drop Automation
-    Author  : Orrnob Mahmud : Thanks to @SDSProjects
-    Github  : https://github.com/OrrnobMahmud
-    Telegram: https://t.me/verifiedcryptoairdops
+ 
+███████╗ █████╗ ██╗   ██╗ █████╗ ███╗   ██╗
+██╔════╝██╔══██╗██║   ██║██╔══██╗████╗  ██║
+███████╗███████║██║   ██║███████║██╔██╗ ██║
+╚════██║██╔══██║╚██╗ ██╔╝██╔══██║██║╚██╗██║
+███████║██║  ██║ ╚████╔╝ ██║  ██║██║ ╚████║
+╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝
+                                                                                                  
+    Auto Claim Bot For Blum - @savanop
+    Author  : Airdop script  : Thanks to @savan
+    Github  : https://github.com/Savanop121
+    Telegram: https://t.me/savanop121
         {Style.RESET_ALL}"""
     arg = argparse.ArgumentParser()
     arg.add_argument(
@@ -532,6 +535,10 @@ async def main():
     {green}5{white}.{green}) {white}set wait time before start {green}({config.clow}-{config.chigh})
     {green}6{white}.{green}) {white}start bot (multiprocessing)
     {green}7{white}.{green}) {white}start bot (sync mode)
+    {green}8{white}.{green}) {white}add query
+    {green}9{white}.{green}) {white}add proxy
+    {green}10{white}.{green}) {white}reset query
+    {green}11{white}.{green}) {white}reset proxies
         """
         opt = None
         if args.action:
@@ -618,6 +625,36 @@ async def main():
             async with aiofiles.open(config_file, "w") as w:
                 await w.write(json.dumps(cfg, indent=4))
             print(f"{green}success update wait time !")
+            input(f"{blue}press enter to continue")
+            opt = None
+            continue
+        if opt == "8":
+            query = input(f"{green}input query : {white}")
+            async with aiofiles.open(data_file, "a") as w:
+                await w.write(f"{query}\n")
+            print(f"{green}success add query !")
+            input(f"{blue}press enter to continue")
+            opt = None
+            continue
+        if opt == "9":
+            proxy = input(f"{green}input proxy : {white}")
+            async with aiofiles.open(proxy_file, "a") as w:
+                await w.write(f"{proxy}\n")
+            print(f"{green}success add proxy !")
+            input(f"{blue}press enter to continue")
+            opt = None
+            continue
+        if opt == "10":
+            async with aiofiles.open(data_file, "w") as w:
+                await w.write("")
+            print(f"{green}success reset query !")
+            input(f"{blue}press enter to continue")
+            opt = None
+            continue
+        if opt == "11":
+            async with aiofiles.open(proxy_file, "w") as w:
+                await w.write("")
+            print(f"{green}success reset proxies !")
             input(f"{blue}press enter to continue")
             opt = None
             continue
