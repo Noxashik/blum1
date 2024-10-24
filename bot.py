@@ -447,9 +447,9 @@ async def get_data(data_file, proxy_file):
 
 async def main():
     init()
-    banner = f"""{Fore.GREEN}
+    banner = f"""{Fore.RED}
 
- \x1b[40m
+ \x1b[50m
 
 888b     d888 8888888 888b    888 888    888        d8888 888888 
 8888b   d8888   888   8888b   888 888    888       d88888   "88b 
@@ -463,9 +463,9 @@ async def main():
                                                          .d88P"  
                                                         888P"    
                                                                                                   
-    Auto Claim Bot For Notpixel - @ashikxmp
+    Auto Claim Bot For BLUM - @ashikxmp
     Author  : Airdop script  : Thanks to Minhaj Chowdhury 
-    Github  : https://github.com/,,,,,,,
+    Github  : https://github.com/Noxashik
     Telegram: https://t.me/ashikxmp
     Telegram channel for more update: https://t.me/teach420x
         {Style.RESET_ALL}"""
