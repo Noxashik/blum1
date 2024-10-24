@@ -448,18 +448,26 @@ async def get_data(data_file, proxy_file):
 async def main():
     init()
     banner = f"""{Fore.GREEN}
- 
-███████╗ █████╗ ██╗   ██╗ █████╗ ███╗   ██╗
-██╔════╝██╔══██╗██║   ██║██╔══██╗████╗  ██║
-███████╗███████║██║   ██║███████║██╔██╗ ██║
-╚════██║██╔══██║╚██╗ ██╔╝██╔══██║██║╚██╗██║
-███████║██║  ██║ ╚████╔╝ ██║  ██║██║ ╚████║
-╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝
+
+ \x1b[40m
+
+888b     d888 8888888 888b    888 888    888        d8888 888888 
+8888b   d8888   888   8888b   888 888    888       d88888   "88b 
+88888b.d88888   888   88888b  888 888    888      d88P888    888 
+888Y88888P888   888   888Y88b 888 8888888888     d88P 888    888 
+888 Y888P 888   888   888 Y88b888 888    888    d88P  888    888 
+888  Y8P  888   888   888  Y88888 888    888   d88P   888    888 
+888   "   888   888   888   Y8888 888    888  d8888888888    88P 
+888       888 8888888 888    Y888 888    888 d88P     888    888 
+                                                           .d88P 
+                                                         .d88P"  
+                                                        888P"    
                                                                                                   
-    Auto Claim Bot For Blum - @ashikxmp
+    Auto Claim Bot For Notpixel - @ashikxmp
     Author  : Airdop script  : Thanks to Minhaj Chowdhury 
-    Github  : https://github.com/Savanop121
+    Github  : https://github.com/,,,,,,,
     Telegram: https://t.me/ashikxmp
+    Telegram channel for more update: https://t.me/teach420x
         {Style.RESET_ALL}"""
     arg = argparse.ArgumentParser()
     arg.add_argument(
