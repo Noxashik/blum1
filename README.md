@@ -1,5 +1,5 @@
 # BlumAuto
-Follow This Installation Guide https://t.me/teach420x/180
+Follow This Installation Guide https://t.me/teach420x/181
 
 # Warning
 
