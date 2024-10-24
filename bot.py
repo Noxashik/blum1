@@ -456,10 +456,10 @@ async def main():
 ███████║██║  ██║ ╚████╔╝ ██║  ██║██║ ╚████║
 ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝
                                                                                                   
-    Auto Claim Bot For Blum - @savanop
-    Author  : Airdop script  : Thanks to @savan
+    Auto Claim Bot For Blum - @ashikxmp
+    Author  : Airdop script  : Thanks to Minhaj Chowdhury 
     Github  : https://github.com/Savanop121
-    Telegram: https://t.me/savanop121
+    Telegram: https://t.me/ashikxmp
         {Style.RESET_ALL}"""
     arg = argparse.ArgumentParser()
     arg.add_argument(
